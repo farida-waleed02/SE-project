@@ -1,0 +1,30 @@
+form {
+    width: 50%;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+           }
+      input[type=text], input[type=password] {
+          width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    font-size: 16px;
+      }
+      button[type="button"] {
+    background-color: #e6b17e;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  
+  }
+  button[type="button"]:hover {
+    background-color: #A1E1F7;
+  }

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="online Booking.css">
+  <title>Online Booking form </title>
+</head>
+<body>
+  <h1>Online Booking form</h1>
+  <form onsubmit="return validateForm()" >
+    <label for="f_name"> First Name:</label>
+    <input type="text" id="f_name" name="f_name" pattern="[A-Za-z]+" ><br><br>
+
+    <label for="l_name">  Last Name:</label>
+    <input type="text" id="l_name" name="l_name" pattern="[A-Za-z]+" ><br><br>
+    
+    <label for="birthdate">Birthdate:</label>
+  <input type="date" id="birthdate" name="birthdate"><br></br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]+"  ><br><br>
+
+    <label for="dentist">Choose your dentist:</label>
+		<select id="dentist" name="dentist" onchange="populateTimeslots()">
+			<option value="">--Select a dentist--</option>
+			<option value="Dr.Reem Fakhry">Dr. Reem Fakhry</option>
+			<option value="Dr.Dina Khaled">Dr. Dina Khaled</option>
+			<option value="Dr.Abadir Ghaly">Dr. Abadir Ghaly</option>
+		</select> <br></br>
+
+		<label for="timeslots">Choose your preferred day and time: </label>
+		<select id="timeslots" name="timeslots">
+			<option value="">--Select a time slot--</option>
+		</select><br></br>
+		
+		<button type="submit">Book Appointment</button>
+	</form> 
+  <script src="Online Booking .js"></script>
+</body>
+</html>
